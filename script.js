@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const passwordEle = document.getElementById("password")
-  const toggleEle = document.getElementById("toggle")
+const togglePassword = document.querySelector("#togglePassword")
+const password = document.querySelector("#password")
 
-  toggleEle.addEventListener("click", function () {
-    const type = passwordEle.getAttribute("type")
-    passwordEle.setAttribute("type", type === "password" ? "text" : "password")
-  })
+togglePassword.addEventListener("click", function (e) {
+  // toggle the type attribute
+  const type =
+    password.getAttribute("type") === "password" ? "text" : "password"
+  password.setAttribute("type", type)
+  // toggle the eye slash icon
+  this.classList.toggle("fa-eye-slash")
 })
