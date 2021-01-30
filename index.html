@@ -6,11 +6,41 @@
     <title>Sign-in</title>
   </head>
   <body>
-    <header>
+    <section>
       <h1>Let's set up your account</h1>
       <h2>Already have an account?</h2>
-      <button>Sign in</button>
-    </header>
-    <div class="input"></div>
+      <button class="primaryBtn">Sign in</button>
+      <div class="form">
+        <form action="">
+          <input type="text" id="name" placeholder="Your name" /><br /><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email address"
+          /><br /><br />
+          <select
+            name="usertype"
+            id="usertype"
+            placeholder="I would describe my user type as"
+          >
+            <option value="beginner"></option>
+            <option value="intermediate"></option>
+            <option value="advanced"></option>
+            <option value="hacker"></option></select
+          ><br />
+          <input type="password" id="pwd" name="pwd" placeholder="Password" />
+          <button class="primaryBtn">Next</button>
+        </form>
+      </div>
+    </section>
+    <aside>
+      <h1>Dummy Heading</h1>
+      <h2>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+        voluptatum ducimus autem iure aperiam vitae earum, inventore aut harum
+        incidunt id similique quo laborum ex nostrum minima. Nemo, magnam
+        similique!
+      </h2>
+    </aside>
   </body>
 </html>
