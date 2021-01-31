@@ -1,9 +1,65 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background-image: url("images/rocket.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .container i {
   margin-left: -30px;
   cursor: pointer;
+}
+
+section,
+aside,
+div {
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+}
+
+aside {
+  background-color: #286ffa;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+}
+
+.flex-container {
+  @media (min-width: 56.25em) {
+  }
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.sidebar {
+  flex: 0 0 500px;
 }
